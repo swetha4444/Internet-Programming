@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>International Conference</title>
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- FONT LINKS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- CSS FILE  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FAVTION -->
+    <link rel="icon" href="fav.png" sizes="32x32">
+    <style>
+      body{
+        font-family: "Bree Serif", serif;
+      }
+
+      .form{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        width: 40%;
+        height: 550px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+        transition: 0.3s;
+        border-radius: 15px;
+        background-color:white;
+      }
+
+      #regs{
+        padding: 20px; 
+        display: flex; 
+        flex-direction: column
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+       <a href="index.html">Home</a>
+       <a href="commitee.html">Commitee</a>
+       <a href="call.html">Call For Papers</a>
+       <a href="imp.html">Important Dates</a>
+       <a href="workshop.html">Workshops</a>
+       <a href="registration.html" style="background-color: #534caf;">Register</a>
+       <a href="contact.html">Contact Us</a>
+    </nav>
+
+  <header>
+    <img src="header.PNG">
+  </header>
+
+  <div style="margin: 40px; margin-left: 55px;">
+    <h1>Register Now!</h1>
+  </div>
+
+
+  <section class="container">
+  <p>
+    The registration fee for different categories of participants is mentioned in the table below. The registration fee for main conference with workshop will cover conference & workshop, full access to all sessions/invited talks including the pre-conference workshop.
+    </p>
+  <p>
+    Currently the only possible mode of payment is NEFT/RTGS for Indian participants and wire transfer for foreign participants. The required bank details are mentioned below:
+  </p>
+  <ul>
+    <li>Bank Account Holders Name :: The Principal SSN College of Engineering</li>
+    <li>Bank A/c Name (NEFT/RTGS/E-Payment) :: 158100050070022</li>
+    <li>Bank Name :: Tamilnad Mercantile Bank</li>
+    <li>IFSC/MICR Code :: TMBL0000158 / 600060010</li>
+    <li>Swift Code :: TMBLINBBCHE</li>
+</ul>
+  </section>
+
+  <section class="container" style="padding-top:20px;">
+     <h2 style="text-align: center; margin-bottom: 20px">
+      REGISTER NOW!
+    </h2>
+    <section class="form">
+      <form id="regs" action="#">
+        <label for="name">Name</label>
+        <input class="form-input" type="text" id="name"/><br/>
+        <br />
+
+        <label for="email">Email ID</label>
+        <input class="form-input" type="text" id="email"/><br/>
+
+        <label for="phone">Contact</label>
+        <input class="form-input" type="text" style="width:70%" id="phone"/><br/>
+
+        <div class="horizontal-group">
+            <label class="label-title">Gender</label>
+            <select class="form-input" id="level" style="width:40%;">
+              <option value="B">Male</option>
+              <option value="I">Female</option>
+              <option value="A">Other</option>
+            </select>
+         </div>
+
+         <div class="form-group">
+          <label for="choose-file" class="label-title">Write to us</label>
+          <textarea class="form-input" rows="4" cols="50" style="height:auto"></textarea>
+        </div>
+      </div>
+
+        <input type="submit" value="Register" class= "btn"
+        /><br />
+      </form>
+    </section>
+  </section>
+
+  
+<div class="wrap">
+  <div class="cont">
+    <div class="box google" style="text-align:center;">
+      <i class="fa fa-google" style="margin-top:10px;"></i>
+    </div>
+  </div>
+  <div class="cont">
+    <div class="box facebook" style="text-align:center;">
+      <i class="fa fa-facebook" style="margin-top:10px;"></i>
+    </div>
+  </div>
+  <div class="cont">
+    <div class="box linkedin" style="text-align:center;">
+      <i class="fa fa-linkedin" style="margin-top:10px;"></i>
+    </div>
+  </div>
+  <div class="cont">
+    <div class="box twitter" style="text-align:center;">
+      <i class="fa fa-twitter" style="margin-top:10px;"></i>
+    </div>
+  </div>
+  <div class="cont">
+    <div class="box youtube" style="text-align:center;">
+      <i class="fa fa-youtube" style="margin-top:10px;"></i>
+    </div>
+  </div>
+</div>
+  <footer>
+    <p align ="center" style="color: white;"> © Copyright All Rights Reserved 2021</p>
+  </footer>
+
+  </body>
+</html>
