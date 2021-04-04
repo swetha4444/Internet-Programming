@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>Employee Registration Form</title>
+      <!-- Stylesheet -->
+      <link href="style.css" rel='stylesheet' type='text/css' />
+   </head>
+
+   <body>
+      <!--background-->
+      <h1>Employee Registration Form </h1>
+      <div class="register-form">
+         <!-- Form starts here -->
+         <form id="employee_form" name="employee_form" action="ServletOne" method="GET">
+            <div class="main">
+               <div class="field-text1">
+                  <input type="text" id="emp_name" name="emp_name" placeholder="Employee Name" 
+                     minlength="6" required>
+               </div>
+               <div class="field-text1">
+                  <input type="text" id="emp_id" name="emp_id"  placeholder="Employee ID">
+               </div>
+            </div>
+            <div class="main">
+               <div class="field-text1">
+                <select class="form-control" id="dept" name="dept" style="width: 50%;">
+                    <option>Department</option>
+                    <option value="Thoracic Surgery">Thoracic Surgery</option>
+                    <option value="General Surgery">General Surgery</option>
+                    <option value="Neurological Surgery">Neurological Surgery</option>
+                    <option value="Orthopaedic Surgery">Orthopaedic Surgery</option>
+                 </select>
+               </div>
+               <div class="field-text1">
+                <select class="form-control" id="desig" name="desig" style="width: 50%;">
+                    <option>Department</option>
+                    <option value="Chief">Chief</option>
+                    <option value="Attending">Attending</option>
+                    <option value="Resident">Resident</option>
+                    <option value="Intern">Intern</option>
+                 </select>
+             </div>
+             <div class="field-text1">
+                <input type="text" id="basic" name="basic" placeholder="Basic Salary" required="">
+             </div>
+               <div class="field-text1">
+                  <input type="text" id="Phone" name="Phone" placeholder="Phone Number"
+                     minlength="10" required>
+               </div>
+            </div>
+            <div class="main">
+               <div class="field-text1">
+                  <input type="date" id="DOB" name="DOB" value="DOB" style="width: 50%;" min="2000-01-01" max="2015-12-31" required>
+               </div>
+            </div>
+            <div class="radio-section" required>
+               <h6>Gender</h6>
+               <ul class="radio-buttons">
+                  <li>
+                     <input type="radio" id="male" name="selector2">
+                     <label for="a-option">Male</label>
+                     <div class="check"></div>
+                  </li>
+                  <li>
+                     <input type="radio" id="female" name="selector2">
+                     <label for="b-option">Female</label>
+                     <div class="check">
+                        <div class="inside"></div>
+                     </div>
+                  </li>
+                  <li>
+                     <input type="radio" id="other" name="selector2">
+                     <label for="b-option">Other</label>
+                     <div class="check">
+                        <div class="inside"></div>
+                     </div>
+                  </li>
+               </ul>
+               <div class="clear"></div>
+            </div>
+            <div class="main">
+               <div class="field-text1">
+                  <select class="form-control" id="Marital" name="Marital" style="width: 50%;" onchange="marStatus()">
+                     <option>Marital Status</option>
+                     <option value="Single">Single</option>
+                     <option value="Married">Married</option>
+                     <option value="Divorced">Divorced</option>
+                  </select>
+               </div>
+            </div>
+            <div class="field-text1">
+               <textarea name="Message" id="Address"  name="Address" placeholder="Address..."></textarea>
+            </div>
+            <input type="submit" id="Submit" name="Submit" value="submit">
+            <input type="reset" value="Clear Form">
+            <div class="clear"></div>
+         </form>
+      </div>
+      <!--copyright-->
+      <div class="copyright">
+         <p>&copy; 2021 Doctor Registration Form | All Rights Reserved</p>
+      </div>
+      <!-- Java Script-->
+      <script src="js/index.js"></script>
+   </body>
+</html>
