@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="style.css">
+      <style>
+         table, th, td {
+            border: 1px solid black;
+            width: 800px;
+            height: 90px;
+         }
+        .header{
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: center; 
+        background-color: darksalmon; 
+        width: fit-content; 
+        height: fit-content;
+        margin-left: 500px;"
+        }
+        .name{
+          padding-left: 20px;
+          background-color: lightcoral; 
+          width: 220px; 
+          margin-left: 20px;
+          height: fit-content;
+        }
+
+        tr:hover {background-color: #ddd;}
+        td,th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+
+        th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #4CAF50;
+          color: white;
+        }
+
+        img:hover {
+          box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+        }
+        
+        div {
+          width: 100px;
+          height: 100px;
+          background-color: rgb(80, 91, 185);
+          animation-name: example;
+          animation-duration: 4s;
+          animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+          0%   {background-color: rgb(175, 88, 88);}
+          25%  {background-color: rgb(182, 214, 121);}
+          50%  {background-color: rgb(195, 148, 223);}
+          100% {background-color: rgb(216, 193, 129);}
+        }
+    </style>
+  </head>
+
+   <body background="images/nature5.jpg">
+      <div class= header>
+        <h1>
+            SSN COLLEGE OF ENGINEERING, KALAVAKKAM <br>
+        Department of Computer Science and Engineering <br>
+            UCS1601---Internet Programming <br>
+                    Assignment – 1<br><br>
+        </h1>
+      </div>
+      <div class=name>
+        <h2>
+            Swetha Saseendran <br>
+            CSE-C<br>
+            185001183<br>
+        </h2>
+      </div>
+      <h2 style="color: white; text-align: center;">Insects Database</h2>
+      
+      <table style="margin: auto; background-color: wheat;">
+         <tr>
+            <th style="text-align: center;" rowspan="2"><h2><em>Name</em></h2></th>
+            <th style="text-align: center;" colspan="4"><h2><em>Insects</em></hq></th>
+         </tr>
+         <tr>
+            <td style="text-align: center;background-color: rgb(141, 161, 99);"><h2><em>Colour</em></h2></td>
+            <td style="text-align: center;background-color: rgb(141, 161, 99);"><h2><em>Indigenous Region</em></h2></td>
+            <td style="text-align: center;background-color: rgb(141, 161, 99);"><h2><em>Harmful</em></h2></td>
+            <td style="text-align: center;background-color: rgb(141, 161, 99);"><h2><em>Lifetime</em></h2></td>
+         </tr>
+         <tr>
+            <td><img width="100%" height="100%" src="images/blue.jpg"></td>
+            <td style="text-align: center;">Blue</td>
+            <td style="text-align: center;">Asia/Africa</td>
+            <td style="text-align: center;">No</td>
+            <td style="text-align: center;">12 Months</td>
+         </tr>
+         <tr>
+            <td rowspan="2"><img width="100%" height="200px" src="images/red.PNG"></td>
+            <td style="text-align: center;">Red</td>
+            <td style="text-align: center;">Asia</td>
+            <td style="text-align: center;" rowspan="2">Yes</td>
+            <td style="text-align: center;">2 years</td>
+         </tr>
+         <tr>
+            <td style="text-align: center;">Red</td>
+            <td style="text-align: center;">Europe</td>
+            <td style="text-align: center;">1.5 years</td>
+         </tr>
+      </table>
+      
+   </body>
+</html>

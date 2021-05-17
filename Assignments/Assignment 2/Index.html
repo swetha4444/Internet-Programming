@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Grade Calculator
+    </title>
+    <!-- FONT AWESOME ICONS -->
+    <script src="https://kit.fontawesome.com/08d11cd3e5.js" crossorigin="anonymous"></script>
+    <!-- FONT LINKS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- CSS FILE  -->
+    <link href="Index.css" rel="stylesheet">
+</head>
+
+<body>
+    <section id="getDetails">
+        <div>
+            <div id="signInDetails">
+                <h1><strong> Grade Calculator </strong></h1>
+                <form class="formStyling" id="form">
+
+                    <div id=1 class="form-group rowStyling disappear">
+                        <h2>
+                            <label for="email"> Name</label>
+                            <input type="text" name="name" class="form-control fieldStyling" id="name1">
+                            <label for="marks"> Marks </label>
+                            <input type="number" name="marks" class="form-control fieldStyling shrink" id="mark1">
+                        </h2>
+                    </div>
+
+                    <div id=2 class="form-group rowStyling disappear">
+                        <h2>
+                            <label for="email"> Name</label>
+                            <input type="text" name="name" class="form-control fieldStyling" id="name2">
+                            <label for="marks"> Marks </label>
+                            <input type="number" name="marks" class="form-control fieldStyling shrink" id="mark2">
+                            <i id="b1" class="fas fa-trash icon" onclick="removeField(this);"></i>
+                        </h2>
+                    </div>
+
+                    <div id=3 class="form-group rowStyling disappear">
+                        <h2>
+                            <label for="email"> Name</label>
+                            <input type="text" name="name" class="form-control fieldStyling" id="name3">
+                            <label for="marks"> Marks </label>
+                            <input type="number" name="marks" class="form-control fieldStyling shrink" id="mark3">
+                            <i id="b2" class="fas fa-trash icon" onclick="removeField(this);"></i>
+                        </h2>
+                    </div>
+
+                    <div id=4 class="form-group rowStyling disappear">
+                        <h2>
+                            <label for="email"> Name</label>
+                            <input type="text" name="name" class="form-control fieldStyling" id="name4">
+                            <label for="marks"> Marks </label>
+                            <input type="number" name="marks" class="form-control fieldStyling shrink" id="mark4">
+                            <i id="b3" class="fas fa-trash icon" onclick="removeField(this);"></i>
+                        </h2>
+                    </div>
+
+                    <div id=5 class="form-group rowStyling disappear">
+                        <h2>
+                            <label for="email"> Name</label>
+                            <input type="text" name="name" class="form-control fieldStyling" id="name5">
+                            <label for="marks"> Marks </label>
+                            <input type="number" name="marks" class="form-control fieldStyling shrink" id="mark5">
+                            <i id="b4" class="fas fa-trash icon" onclick="removeField(this);"></i>
+                        </h2>
+                    </div>
+
+                    <br>
+                    <button id="addStudent" name="addStudent" class="button" onclick="add()"> Add Student </button>
+                    <button id="submit" name="submit" class="button" onclick="displayTable()"> Submit </button>
+                </form>
+            </div>
+        </div>
+        <div id="gradeTable" class="disappear">
+
+            <table>
+                <tr>
+                    <th id="titleName"><strong> NAME </strong></th>
+                    <td id="titleMark"><strong> GRADE </strong></td>
+                </tr>
+                <tr id="student1" class="disappear">
+                    <th id="tableName1"></th>
+                    <td id="grade1"></td>
+                </tr>
+                <tr id="student2" class="disappear">
+                    <th id="tableName2"></th>
+                    <td id="grade2"></td>
+                </tr>
+                <tr id="student3" class="disappear">
+                    <th id="tableName3"></th>
+                    <td id="grade3"></td>
+                </tr>
+                <tr id="student4" class="disappear">
+                    <th id="tableName4"></th>
+                    <td id="grade4"></td>
+                </tr>
+                <tr id="student5" class="disappear">
+                    <th id="tableName5"></th>
+                    <td id="grade5"></td>
+                </tr>
+            </table>
+
+            <br>
+            <button id="exitButton" class="button" onclick="exit()"> Exit </button>
+        </div>
+    </section>
+    <script src="Index.js"></script>
+</body>
+
+</html>
